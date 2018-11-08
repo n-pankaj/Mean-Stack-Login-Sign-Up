@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+      <h1 style="text-align:center;">Register</h1>
+      <p class="lead" style="text-align:center;">Already a member of Innovation Club? Please <a routerLink="/login">Sign in</a></p>
+      <p class="lead" style="text-align:center;">or</p>
+      <p class="lead" style="text-align:center;">Create New Innovation Club Id</p>
+      <form (submit)="register()">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input type="text" class="form-control" name="name" placeholder="Enter your name" [(ngModel)]="credentials.name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="credentials.email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="credentials.password">
+        </div>
+        <button type="submit" class="btn btn-default" style="color:red;">Register!</button>
+      </form>
+    </div>
+  </div>
+
+</div>
